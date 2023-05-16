@@ -1,11 +1,17 @@
 #!/usr/bin/python3
+"""
+creates a square using a class
+"""
+
 
 class square():
-    
+    """
+    class to create a sqyare
+    """
+
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
         for key, value in kwargs.items():
             setattr(self, key, value)
@@ -19,6 +25,7 @@ class square():
 
     def __str__(self):
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
 
